@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta+ Academia | Por un futuro mejor </title>
+    <style>
+        :root {
+            --primary: #1e293b;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+            --border: #e2e8f0;
+            --radius: 12px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+        body { background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
+
+        header { background-color: var(--primary); color: white; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+        nav { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: #ffffff; text-decoration: none; }
+        .logo span { color: #60a5fa; }
+        .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+        .nav-links a { color: #cbd5e1; text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: white; }
+
+        .hero { max-width: 1100px; margin: 4rem auto 2rem auto; padding: 0 2rem; text-align: center; }
+        .hero h1 { font-size: 2.8rem; font-weight: 800; color: var(--primary); margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 2rem auto; }
+
+        .btn { display: inline-block; background-color: var(--accent); color: white; padding: 0.8rem 1.8rem; border-radius: 8px; text-decoration: none; font-weight: 600; }
+        .btn-secondary { background-color: transparent; color: var(--primary); border: 2px solid var(--border); margin-left: 0.8rem; }
+
+        .features { max-width: 1100px; margin: 4rem auto; padding: 0 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; }
+        .card-icon { font-size: 2rem; margin-bottom: 1rem; color: var(--accent); }
+        .card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--primary); }
+
+        .materials { background: #ffffff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 4rem 2rem; }
+        .materials-container { max-width: 1100px; margin: 0 auto; }
+        .resource-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .resource-item { display: flex; align-items: center; justify-content: space-between; background: var(--bg-light); border: 1px solid var(--border); padding: 1rem 1.5rem; border-radius: 8px; }
+
+        footer { background: var(--primary); color: #94a3b8; text-align: center; padding: 2rem; font-size: 0.9rem; }
+        footer a { color: #ffffff; }
+
+        .image-title {
+            background-image: url("1.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 3rem 2rem;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">Delta<span>+</span> Academia</a>
+            <ul class="nav-links">
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#resources">Recursos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 class="image-title">¿Querés dominar las matemáticas?</h1>
+        <p> <b>Delta+ Academia</b> busca que las personas desarrollen y consoliden sus conocimientos y habilidades en matemáticas, a través de tutorías personalizadas, material de práctica especializado y acompañamiento a largo plazo</p>
+        <a href="https://wa.me/qr/NQAHIOHL4EMYC1" class="btn">Solicitar Tutoría</a>
+        <a href="#resources" class="btn btn-secondary">Explorar Materiales</a>
+    </section>
+
+    <section class="features" id="services">
+        <div class="card">
+            <div class="card-icon">∫</div>
+            <h3>Clases Personalizadas</h3>
+            <p>Sesiones individuales adaptadas al ritmo del estudiante, enfocadas en desarrollo conceptual, resolución de problemas y preparación para exámenes.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">📐</div>
+            <h3>Material Didáctico de Calidad</h3>
+            <p>Guías, prácticas y resúmenes diseñados con estándares editoriales científicos y esquemas vectoriales precisos.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Preparación para Pruebas</h3>
+            <p>Refuerzo en conocimientos clave de primaria, secundaria y nivel universitario, con base a la prueba o metodología específica del programa.</p>
+        </div>
+    </section>
+
+    <section class="materials" id="resources">
+        <div class="materials-container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h2 style="font-size: 2rem; color: var(--primary);">Descarga de Materiales Didácticos</h2>
+                <p style="color: var(--text-muted);">Recursos académicos actualizados listos para estudio independiente.</p>
+            </div>
+            <ul class="resource-list">
+                <li class="resource-item">
+                    <span>Unidad 1: Radicales y Exponentes</span>
+                    <a href="pdfs/unit_01_radicals.pdf" style="color: var(--accent); font-weight: 600;">Descargar PDF →</a>
+                </li>
+                <li class="resource-item">
+                    <span>Unidad 2: Funciones y Gráficas</span>
+                    <a href="pdfs/unit_02_functions.pdf" style="color: var(--accent); font-weight: 600;">Descargar PDF →</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 <strong>Delta+ Academia</strong>. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
